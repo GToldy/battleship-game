@@ -1,0 +1,184 @@
+﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{EE1753D0-8694-4CDF-B585-AB54A700B636}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\georg\Desktop\C_Sharp_Programs\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Battleship</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>66C9FDD37A0E8B3BDB287C75507BDA9C2435E543</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Battleship_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include=".git\ms-persist.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Battleship.cs" />
+    <Compile Include="Board.cs" />
+    <Compile Include="BoardFactory.cs" />
+    <Compile Include="ComputerPlayer.cs" />
+    <Compile Include="Display.cs" />
+    <Compile Include="Game.cs" />
+    <Compile Include="Input.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="Ship.cs" />
+    <Compile Include="ShipType.cs" />
+    <Compile Include="Square.cs" />
+    <Compile Include="SquareStatus.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".git\COMMIT_EDITMSG" />
+    <None Include=".git\config" />
+    <None Include=".git\description" />
+    <None Include=".git\FETCH_HEAD" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\hooks\applypatch-msg.sample" />
+    <None Include=".git\hooks\commit-msg.sample" />
+    <None Include=".git\hooks\fsmonitor-watchman.sample" />
+    <None Include=".git\hooks\post-update.sample" />
+    <None Include=".git\hooks\pre-applypatch.sample" />
+    <None Include=".git\hooks\pre-commit.sample" />
+    <None Include=".git\hooks\pre-merge-commit.sample" />
+    <None Include=".git\hooks\pre-push.sample" />
+    <None Include=".git\hooks\pre-rebase.sample" />
+    <None Include=".git\hooks\pre-receive.sample" />
+    <None Include=".git\hooks\prepare-commit-msg.sample" />
+    <None Include=".git\hooks\push-to-checkout.sample" />
+    <None Include=".git\hooks\update.sample" />
+    <None Include=".git\index" />
+    <None Include=".git\info\exclude" />
+    <None Include=".git\logs\HEAD" />
+    <None Include=".git\logs\refs\heads\Board" />
+    <None Include=".git\logs\refs\heads\development" />
+    <None Include=".git\logs\refs\remotes\origin\Board" />
+    <None Include=".git\logs\refs\remotes\origin\development" />
+    <None Include=".git\logs\refs\remotes\origin\Gameflow" />
+    <None Include=".git\logs\refs\remotes\origin\HEAD" />
+    <None Include=".git\objects\0a\34381797823d75db869aa60459d9a357797d00" />
+    <None Include=".git\objects\26\18c59db432a82e2d249f13e0670a51f41a53c3" />
+    <None Include=".git\objects\4b\a6dea5540f94adf1df64a5d268be2a76233611" />
+    <None Include=".git\objects\4e\1a1785f4aa0668e80dc24ac4b63d4714cb210d" />
+    <None Include=".git\objects\51\d483bef79a69c900a0320aacd73d64bb0ef51f" />
+    <None Include=".git\objects\60\a73029ae1e323d3a9ff467bb2be048b849ae79" />
+    <None Include=".git\objects\67\4342f67cfc1d58014e68e3bc7954828cac674c" />
+    <None Include=".git\objects\73\28633e2fe7da385a4a941a7b2e68b22b9a2b14" />
+    <None Include=".git\objects\7a\f2af34cbe5174c41494dd0046fa1f91a4a4d6d" />
+    <None Include=".git\objects\7e\afa91e4bd7632cd0f4d50fa0e46ea90a799e1f" />
+    <None Include=".git\objects\8a\4b495efca6efd124bea7b3dded656a520776f4" />
+    <None Include=".git\objects\97\6fbb761d4bbd3d8ea1092c1f3049e5853ba218" />
+    <None Include=".git\objects\b9\5800abb8513494af39ada83f56e2500479a083" />
+    <None Include=".git\objects\bc\3ed76fa0f78187241a009da59f86eab33a23f7" />
+    <None Include=".git\objects\c0\fe9cc29c7d5fdea89db07c333cc16c93fdf2c5" />
+    <None Include=".git\objects\d2\2a4ed9de35a3077a687b69afb663472bb52ac3" />
+    <None Include=".git\objects\d3\775c3df746d06035f8a25eaed8456daae68373" />
+    <None Include=".git\objects\ea\7481688201909cb545c7b4d5cef9b1a29778b2" />
+    <None Include=".git\objects\f1\a4ed39b55c426de9175b1f402126e2caaf126a" />
+    <None Include=".git\objects\fa\2627dcbf2e08b370cf3781f277e0fb7d3c3849" />
+    <None Include=".git\objects\fb\d7cf26a6865abd702a8527501e413e8a8364ba" />
+    <None Include=".git\objects\fc\bdc84e7a4b7ecd637846152abcbee5edd6ba72" />
+    <None Include=".git\objects\pack\pack-455b192bacf71c97d3aa917992e8b7ee88dd194f.idx" />
+    <None Include=".git\objects\pack\pack-455b192bacf71c97d3aa917992e8b7ee88dd194f.pack" />
+    <None Include=".git\ORIG_HEAD" />
+    <None Include=".git\packed-refs" />
+    <None Include=".git\refs\heads\Board" />
+    <None Include=".git\refs\heads\development" />
+    <None Include=".git\refs\remotes\origin\Board" />
+    <None Include=".git\refs\remotes\origin\development" />
+    <None Include=".git\refs\remotes\origin\Gameflow" />
+    <None Include=".git\refs\remotes\origin\HEAD" />
+    <None Include=".vs\battleship-oop-csharp-polandrea\FileContentIndex\19a9acbe-d399-4d0f-b084-873d1fa77bc3.vsidx" />
+    <None Include=".vs\battleship-oop-csharp-polandrea\FileContentIndex\5cfa3c8b-9c2e-4e05-ae64-dde7cac90a54.vsidx" />
+    <None Include=".vs\battleship-oop-csharp-polandrea\FileContentIndex\read.lock" />
+    <None Include=".vs\battleship-oop-csharp-polandrea\v17\.suo" />
+    <None Include=".vs\slnx.sqlite" />
+    <None Include=".vs\VSWorkspaceState.json" />
+    <None Include="app.config" />
+    <None Include="Battleship_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\refs\tags\" />
+    <Folder Include=".vs\battleship-oop-csharp-polandrea\FileContentIndex\merges\" />
+    <Folder Include=".vs\Battleship\v17\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
